@@ -2,7 +2,8 @@ const { GestureDescription, Finger, FingerCurl } = window.fp;
   
 const ScrollDownGesture = new GestureDescription('scroll-down'); // ✊️
 const ScrollUpGesture = new GestureDescription('scroll-up'); // 🖐
-const RockGesture = new GestureDescription('rock'); // 🤘
+const ClickGesture = new GestureDescription('click'); // 🤏
+// const RockGesture = new GestureDescription('rock'); // 🤘
 
   
 // Scroll down
@@ -28,28 +29,49 @@ for(let finger of Finger.all) {
     ScrollUpGesture.addCurl(finger, FingerCurl.NoCurl, 1.0);
 }
 
+// Click
+// -----------------------------------------------------------------------------
+
+ClickGesture.addCurl(Finger.Index, FingerCurl.HalfCurl, 0.8)
+ClickGesture.addCurl(Finger.Index, FingerCurl.FullCurl, 0.5)
+
+ClickGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0)
+ClickGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 0.4)
+
+
+ClickGesture.addCurl(Finger.Middle, FingerCurl.HalfCurl, 1.0)
+ClickGesture.addCurl(Finger.Middle, FingerCurl.FullCurl, 0.9)
+
+ClickGesture.addCurl(Finger.Ring, FingerCurl.HalfCurl, 1.0)
+ClickGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 0.9)
+
+ClickGesture.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 1.0)
+ClickGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 0.9)
+
 // Rock
 // -----------------------------------------------------------------------------
 
-RockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl , 1.0);
-RockGesture.addCurl(Finger.Index, FingerCurl.NoCurl , 1.0);
-RockGesture.addCurl(Finger.Pink, FingerCurl.NoCurl , 1.0);
+// RockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl , 1.0);
+// RockGesture.addCurl(Finger.Index, FingerCurl.NoCurl , 1.0);
+// RockGesture.addCurl(Finger.Pink, FingerCurl.NoCurl , 1.0);
 
-for (let finger of [Finger.Thumb, Finger.Index, Finger.Pinky]) {
-  RockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0)
-  RockGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9)
-}
+// for (let finger of [Finger.Thumb, Finger.Index, Finger.Pinky]) {
+//   RockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0)
+//   RockGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9)
+// }
 
 const knowGestures = [
   ScrollDownGesture,
   ScrollUpGesture,
-  RockGesture,
+  ClickGesture,
+  // RockGesture,
 ]
 
 const gestureStrings = {
   'scroll-up': '🖐',
   'scroll-down': '✊️',
-  'rock': '🤘'
+  click: '🤏',
+  // 'rock': '🤘'
 }
 
 export {
