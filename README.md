@@ -1,12 +1,15 @@
 # JSExpertMax Gesture Controller - Semana JS Expert 7.0
 
+- Para testar o projeto final → [clique aqui](https://eduardovsousa.github.io/gesture-controller/) ←
+
 ## Preview
 <img width=100% src="./assets/demo-template-lg.gif">
 
 ## Pre-reqs
 
 - Este projeto foi criado usando Node.js v19.6
-- O ideal é que você use o projeto em ambiente Unix (Linux). Se você estiver no Windows, é recomendado que use o Windows Subsystem Linux pois nas aulas são mostrados comandos Linux que possam não existir no Windows.
+- O ideal é que você rode o projeto com a versão mais recente do Chrome/Firefox.
+- É necessário conceder acesso a câmera.
 
 ## Running
 
@@ -31,5 +34,6 @@
       3. Opção 3: Trocar de WebGL para CPU (mais lento) ou Web Assembly
         - https://blog.tensorflow.org/2020/03/introducing-webassembly-backend-for-tensorflow-js.html
 
-### Créditos ao Layout
+### Créditos
 - Interface baseada no projeto [Streaming Service](https://codepen.io/Gunnarhawk/pen/vYJEwoM) de [gunnarhawk](https://github.com/Gunnarhawk)
+- Ao maestro [Erick Wendell](https://www.linkedin.com/in/erickwendel/) por contribuir com a comunidade Dev com esse projeto incrível.
