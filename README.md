@@ -1,6 +1,18 @@
 # JSExpertMax Gesture Controller - Semana JS Expert 7.0
 
-- Para testar o projeto final → [clique aqui](https://eduardovsousa.github.io/gesture-controller/) ←
+**Para testar o projeto final → [clique aqui](https://eduardovsousa.github.io/gesture-controller/) ←**
+
+Dicas de como utilizar os gestos:
+
+*Pagina principal*
+* ✊️ - Scroll down
+* 🖐 - Scroll up
+* 🤏🏻 - Click
+
+*Pagina do filme selecionado (clicar no botão "Initialize Blink Recognition" para iniciar)*
+- 😉 - Iniciar ou pausar video
+
+
 
 ## Preview
 <img width=100% src="./assets/demo-template-lg.gif">
